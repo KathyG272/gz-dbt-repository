@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: gz_raw_data
+    tables:
+      - name: raw_gz_sales
+        description: "Table containing sales transactions"
+        alias: sales
+      - name: raw_gz_product
+        description: "Table containing product information"
+        alias: product
+      - name: raw_gz_ship
+        description: "Table containing shipping information"
+        alias: ship
