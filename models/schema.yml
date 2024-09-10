@@ -2,11 +2,12 @@ version: 2
 
 sources:
   - name: raw_gz_data
-    description: raw data greenweez
+    description: raw data greenweez 
     tables:
       - name: product
-        description: raw gz product data
+        description: raw_gz_product
       - name: sales
-        description: raw gz sales data
+        description: raw_gz_sales
       - name: ship
-        description: raw gz shipping data
+        description: raw_gz_ship
+
