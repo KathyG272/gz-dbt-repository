@@ -20,9 +20,4 @@ sources:
             description: the quantity of products purchased for a given order
         tests:
           - unique:
-              column_name: "(orders_id || '-' || pdt_id)"
-          ## OR ## if dbt_utils is installed
-          - dbt_utils.unique_combination_of_columns:
-              combination_of_columns:
-                - orders_id
-                - pdt_id
+              column_name: "(orders_id || '-' || products_id)"
