@@ -1,10 +1,12 @@
-with 
+  with
 
-source as (
+  source as (
 
-    select * from {{ source('raw', 'product') }}
+      select * from {{ source('raw', 'product') }}
 
-),
+  ),
+
+  renamed as (
 
       select
           products_id,
@@ -12,6 +14,6 @@ source as (
 
       from source
 
-)
+  )
 
-select * from renamed
+  select * from renamed
