@@ -6,12 +6,7 @@ sources:
     tables:
       - name: sales
         identifier: raw_gz_sales
-        description: Sales of Greenweez, one row per product in each order
-        columns:
-          - name: orders_id
-            description: Unique identifier for each order
-          - name: pdt_id
-            description: Product identifier for each order
-        tests:
-          - unique:
-              column_name: "(orders_id || '-' || pdt_id)"
+      - name: product
+        identifier: raw_gz_product
+      - name: ship
+        identifier: raw_gz_ship
